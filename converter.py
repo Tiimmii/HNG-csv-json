@@ -8,7 +8,14 @@ with open ("NFT Naming csv - All Teams.csv", "r") as f:
     next(reader)
     data = []
     for row in reader:
-        data.append({"SerialNumber":row[0], "FileName":row[1], "UUID":row[2]})
+        row[6] = []
+        for rows in row[6]:
+            row[6].append({"hair":rows[0], "eyes":rows[1], "teeth":rows[2], "clothing":rows[3], "accessories":rows[4], "expression":rows[5], "strength":rows[6], "weakness":rows[7]})
+        data.append({"TEAM NAMES":row[0],"SerialNumber":row[1], "FileName":row[2], "Name":row[3], "Description":row[4], "Gender":row[5], "Attributes":row[6], "UUID":row[7]})
+        # attributes = row["Attributes"]
+        # attributes = []
+        # for row in attributes:
+        #     attributes.append({"hair":row[0], "eyes":row[1], "teeth":row[2], "clothing":row[3], "accessories":row[4], "expression":row[5], "strength":row[6], "weakness":row[7]})
 
 #Converting the NFT.csv file to JSON
 with open ("NFT Naming.json", "w") as f:
