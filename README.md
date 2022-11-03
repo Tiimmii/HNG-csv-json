@@ -1,6 +1,6 @@
 # HNG-csv-json
 
-Python code that converts csv file to json data, harshes the json data using the sha256 hasher and appends the harshed data to an output csv file(filename.output.csv)
+Python code that converts csv file to json data, harshes the json data using the sha256 hasher and appends the hashed data to an output csv file(filename.output.csv)
 
 ## Run Locally
 
