@@ -40,6 +40,6 @@ Use ```pip``` command to install requirements
 
 python is a general-purpose language, it’s used across a variety of fields and industries.
 
-##contact
+**contact**
 
 -https://instagram.com/tiimmii._/
