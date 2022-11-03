@@ -1,6 +1,6 @@
-# HNG-csv-json
+# JSON/CSV - Generator
 
-Python code that converts csv file to json data, harshes the json data using the sha256 hasher and appends the hashed data to an output csv file(filename.output.csv)
+Python script that generates a CHIP-0007 compatible json with sha256 hashing for each json data and generates the csv output(filename.output.csv). [HNG9 task].
 
 ## Run Locally
 
