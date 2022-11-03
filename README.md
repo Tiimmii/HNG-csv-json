@@ -12,7 +12,6 @@ Clone the project
 
 Go to the project directory
 
-
 Install dependencies
 
 make sure to have python(pip) installed on ure pc
