@@ -24,7 +24,7 @@ make sure to have python(pip) installed on ure pc
 Running Program
 click the run icon on ure IDE
 OR
-``cmd
+```cmd
   copy the directory of converter.py and run
 ```
 
