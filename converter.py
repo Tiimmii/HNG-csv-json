@@ -7,7 +7,6 @@ with open ("NFT Naming csv - All Teams.csv", "r") as f:
     reader = csv.reader(f)
     next(reader)
     data = []
-    list = []
     for row in reader:
         split = row[6].split(";")
         for items in split:
