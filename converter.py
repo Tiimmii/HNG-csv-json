@@ -8,10 +8,7 @@ with open ("NFT Naming csv - All Teams.csv", "r") as f:
     next(reader)
     data = []
     for row in reader:
-        split = row[6].split(";")
-        for items in split:
-            item = items.split(":")
-        data.append({"format":"CHIP-0007","name":row[2],"description":row[4], "minting_tool":row[0], "sensitive_content":False, "series_number":row[1], "series_total":420, "gender":row[5], "Attributes":item, "UUID":row[7]})
+        data.append({"format":"CHIP-0007","name":row[2],"description":row[4], "minting_tool":row[0], "sensitive_content":False, "series_number":row[1], "series_total":420, "gender":row[5], "Attributes":row[6], "UUID":row[7]})
 #Converting the NFT.csv file to JSON
 with open ("NFT Naming.json", "w") as f:
     json.dump(data, f, indent=3)
